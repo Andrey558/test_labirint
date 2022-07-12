@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тестовое задание Лабиринт</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">
+                Оформление заказа
+            </h1>
+        </header>
+        <main class="content">
+            <section class="order-parameters">
+                <div class="delivery">
+                    <div class="delivery__wrapper">
+                        <h2 class="section-title">
+                            Доставка
+                        </h2>
+
+                        <div class="carousel-btns">
+                            <button type="button" class="carousel-btns__left"></button>
+                            <button type="button" class="carousel-btns__right carousel-btns__right_active"></button>
+                        </div>
+                    </div>
+                    <div class="delivery-info">
+                        <div class="delivery-methods">
+                            <ul class="delivery-methods__list">
+                                <li class="delivery-methods__item delivery-methods__item_active">
+                                    <div class="delivery-methods__item-wrapper">
+                                        <h3 class="delivery-methods__title">
+                                            Почта России, курьер — 24-26 сент.
+                                        </h3>
+                                        <p class="delivery-methods__adress">
+                                            ул. Академика Королева, 73/3, Петропавловск- Камчатский, 683000
+                                        </p>
+                                    </div>
+                                    <p class="delivery-methods__prise">+367 ₽</p>
+                                    <!-- Блок для адаптива -->
+                                    <div class="delivery-methods__item-wrapper-small">
+                                        <h3 class="delivery-methods__title">
+                                            Почта России, курьер — 25 сен.,
+                                        </h3>
+                                        <p class="delivery-methods__prise-small">
+                                            +200 ₽
+                                        </p>
+                                        <p class="delivery-methods__adress">
+                                            ул. Алексея Алексеева, 194 Б, Москва, 123456
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li class="delivery-methods__item">
+                                    <div class="delivery-methods__item-wrapper">
+                                        <h3 class="delivery-methods__title">
+                                            Лабиринт, курьер — 25 сент.
+                                        </h3>
+                                        <p class="delivery-methods__adress">
+                                            Можайское шоссе, д. 21, кв. 50, Москва, 121471
+                                        </p>
+                                    </div>
+                                    <p class="delivery-methods__prise">0 ₽</p>
+                                    <!-- Блок для адаптива -->
+                                    <div class="delivery-methods__item-wrapper-small">
+                                        <h3 class="delivery-methods__title">
+                                            Лабиринт, курьер — 25 сент.
+                                        </h3>
+                                        <p class="delivery-methods__prise-small">
+                                            +200 ₽
+                                        </p>
+                                        <p class="delivery-methods__adress">
+                                            ул. Алексея Алексеева, 194 Б, Москва, 123456
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="change-link change-link_address">
+                          Выбрать новое место и способ
+                      </a>
+
+                        <div class="delivery-time">
+                            <ul class="delivery-time__list">
+                                <li class="delivery-time__item delivery-time__item_active">
+                                    <p class="delivery-time__days">
+                                        пн, 24 сен — ср, 26 сен
+                                    </p>
+                                    <p class="delivery-time__hours">
+                                        10:00–19:00
+                                    </p>
+                                    <!-- Блок для адаптива -->
+                                    <p class="delivery-time__days_small">
+                                        вт, 25 сен
+                                    </p>
+                                    <p class="delivery-time__hours_small">
+                                        10:00–19:00
+                                    </p>
+                                </li>
+                                <li class="delivery-time__item">
+                                    <p class="delivery-time__days">
+                                        пн, 24 сен — ср, 26 сен
+                                    </p>
+                                    <p class="delivery-time__hours">
+                                        10:00–19:00
+                                    </p>
+                                    <!-- Блок для адаптива -->
+                                    <p class="delivery-time__days_small">
+                                        ср, 26 сен
+                                    </p>
+                                    <p class="delivery-time__hours_small">
+                                        10:00–19:00
+                                    </p>
+                                    <!-- Конец адаптива -->
+                                </li>
+                            </ul>
+                            <a href="#" class="change-link change-link_time">
+                              Другие дата и время
+                          </a>
+                        </div>
+
+                        <div class="delivery-functions">
+                            <ul class="delivery-functions__list">
+                                <li class="delivery-functions__item">
+                                    <input type="checkbox" class="notifications" id="notifications" checked>
+                                    <label for="notifications" class="function">Viber/СМС уведомления о статусе заказа</label>
+                                </li>
+                                <li class="delivery-functions__item">
+                                    <input type="checkbox" class="notifications" id="delivery">
+                                    <label for="delivery" class="function">Оставить у двери (бесконтактная доставка)</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="recipient">
+                    <div class="recipient__wrapper">
+                        <h2 class="section-title">
+                            Получатель
+                        </h2>
+                        <!-- Блок адаптива -->
+                        <a href="#" class="change-link change-link_name-small">
+                          Новый получатель
+                      </a>
+                        <!-- Конец адаптива -->
+                    </div>
+
+                    <div class="resipient-info">
+                        <div class="resipient-info__wrapper">
+                            <div class="resipient-info__name">
+                                <h3 class="resipient-info__name-title">
+                                    Имя и фамилия
+                                </h3>
+                                <!-- Блок адаптива -->
+                                <h3 class="resipient-info__name-title-small">
+                                    Имя и фамилия, как в паспорте
+                                </h3>
+                                <!-- Конец адаптива -->
+                                <select name="name" class="resipient-info__name-list">
+                                  <option value="value1" selected>Вольфганг Вениаминович Константинопольский</option>
+                                  <option value="value1">Иной пользователь</option>
+                              </select>
+
+                            </div>
+
+                            <div class="resipient-info__number">
+                                <div class="resipient-info__number-wrapper">
+                                    <h3 class="resipient-info__number-title">
+                                        Контактный телефон
+                                    </h3>
+                                    <!-- Блок адаптива -->
+                                    <h3 class="resipient-info__number-title-small">
+                                        Мобильный телефон
+                                    </h3>
+                                    <!-- Конец адаптива -->
+                                    <select name="number" class="resipient-info__number-list">
+                                      <option value="value1" selected>+7 910 234-56-78</option>
+                                      <option value="value1">Иной номер телефона</option>
+                                  </select>
+                                </div>
+
+                                <!-- Блок адаптива -->
+                                <a href="#" class="change-link change-link_phone-small">
+                                  Новый телефон
+                              </a>
+                                <!-- Конец адаптива -->
+                            </div>
+                        </div>
+
+                        <div class="change-links">
+                            <a href="#" class="change-link change-link_name">
+                              Новый получатель
+                          </a>
+
+                            <a href="#" class="change-link change-link_phone">
+                              Новый телефон
+                          </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="order-total">
+                <div class="order-total__wrapper">
+                    <h2 class="section-title">В заказе 4 товара</h2>
+                    <p class="order-total__weight">(2 кг)</p>
+                </div>
+                <ul class="order-total__list">
+                    <li class="order-total__item">
+                        <div class="point">
+                            <p class="point__name">
+                                Цена товаров
+                            </p>
+                            <p class="point__price">
+                                29 456 ₽
+                            </p>
+                        </div>
+                    </li>
+                    <li class="order-total__item">
+                        <div class="point">
+                            <p class="point__name">
+                                Все скидки
+                            </p>
+                            <p class="point__price">
+                                –7 732 ₽
+                            </p>
+                        </div>
+                    </li>
+                    <li class="order-total__item">
+                        <div class="point">
+                            <p class="point__name">
+                                Скидка за предоплату
+                            </p>
+                            <p class="point__price">
+                                –3%
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <!-- Блок адаптива -->
+                <div class="total-small">
+                    <p class="total__text">
+                        К оплате:
+                    </p>
+                    <p class="total__price">
+                        21 072 ₽
+                    </p>
+                    <a href="#" class="change-link change-link_more-detailed">
+                      Подробнее
+                  </a>
+                </div>
+                <!-- Конец адаптива -->
+                <button type="submit" class="footer__btn">Оформить и оплатить</button>
+                <div class="total">
+                    <p class="total__text">
+                        Итого к оплате на сайте:
+                    </p>
+                    <p class="total__price">
+                        21 072 ₽
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="popup">
+        <div class="popup__container">
+            <div class="popup__wrapper">
+                <p class="popup__quantity">В заказе 4 товара</p>
+                <p class="popup__weignt">(2 кг)</p>
+            </div>
+            <ul class="popup__list">
+                <li class="popup__item">
+                    <div class="popup-point">
+                        <p class="popup-point__name">
+                            Цена товаров
+                        </p>
+                        <p class="popup-point__price">
+                            29 456 ₽
+                        </p>
+                    </div>
+                </li>
+                <li class="popup__item">
+                    <div class="popup-point">
+                        <p class="popup-point__name">
+                            Все скидки
+                        </p>
+                        <p class="popup-point__price">
+                            –7 732 ₽
+                        </p>
+                    </div>
+                </li>
+                <hr class="line">
+                <li class="popup__item">
+                    <div class="popup-point">
+                        <p class="popup-point__name">
+                            К оплате:
+                        </p>
+                        <p class="popup-point__price">
+                            21 072 ₽
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="popup__btn-wrapper">
+                <button class="popup__btn-close">
+                  Закрыть подробности
+              </button>
+            </div>
+        </div>
+    </div>
+
+    <script type="popup" src="./script.js"></script>
+</body>
+
+</html>

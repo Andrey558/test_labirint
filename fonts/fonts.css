@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'PTRootUI';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./PTRootUI-Regular.woff2") format("woff2"), url("./PTRootUI-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'PTRootUI';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("./PTRootUI-Medium.woff2") format("woff2"), url("./PTRootUI-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'PTRootUI';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("./PTRootUI-Bold.woff2") format("woff2"), url("./PTRootUI-Bold.woff") format("woff");
+}
